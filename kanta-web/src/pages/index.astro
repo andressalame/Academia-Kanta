@@ -1,0 +1,317 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// ====== EDITA AQUÍ TUS DATOS ======
+const WHATSAPP = 'https://wa.me/51989077928'; // TODO: tu número real con código de país
+const AGENDA = '#contacto'; // TODO: reemplazar por tu link de Cal.com o Calendly cuando lo tengas
+---
+
+<Layout>
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="logo">kanta<sup>♯</sup></a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a href="#cursos">Cursos</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#precios">Precios</a>
+        <a href="#faq">Preguntas</a>
+        <a href={AGENDA} class="btn btn-primary">Clase muestra</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="staff" aria-hidden="true"></div>
+      <div class="staff-sharp" aria-hidden="true">♯</div>
+      <div class="container">
+        <p class="eyebrow reveal">Academia de música 100% online</p>
+        <h1 class="reveal">Toca. Escribe. <span class="sharp">Kanta.</span></h1>
+        <p class="lead reveal">
+          Clases en vivo de canto, piano y composición, con un profesor real al
+          otro lado de la pantalla. Desde tu casa, a tu ritmo, con resultados
+          que se escuchan.
+        </p>
+        <div class="hero-ctas reveal">
+          <a href={AGENDA} class="btn btn-primary">Agenda tu clase muestra</a>
+          <a href="#cursos" class="btn btn-ghost">Ver cursos</a>
+        </div>
+        <p class="hero-meta reveal">
+          Clases 1 a 1 por videollamada · Alumnos de cualquier país · Horarios
+          en hora de Perú (GMT-5)
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ CURSOS ============ -->
+    <section class="section" id="cursos">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Cursos</p>
+          <h2>Tres caminos, una meta: tu música</h2>
+          <p>
+            Cada curso tiene niveles, plan de estudios y metas concretas. Nada
+            de avanzar a ciegas: siempre sabes qué lograrás.
+          </p>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <div class="icon" aria-hidden="true">♪</div>
+            <h3>Canto</h3>
+            <p>
+              Afina, proyecta y suelta tu voz con técnica de verdad. Al terminar
+              el primer nivel cantas tu primera canción completa, de inicio a
+              fin.
+            </p>
+            <a href={AGENDA}>Empieza con una clase muestra →</a>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">𝄞</div>
+            <h3>Piano</h3>
+            <p>
+              De cero al teclado sin vueltas: acordes, ritmo y lectura aplicada.
+              Tocas tus primeras piezas desde las primeras semanas.
+            </p>
+            <a href={AGENDA}>Empieza con una clase muestra →</a>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">♭</div>
+            <h3>Composición musical</h3>
+            <p>
+              Convierte ideas sueltas en canciones terminadas. Melodía, armonía
+              y letra: al final del curso tienes un tema 100% tuyo.
+            </p>
+            <a href={AGENDA}>Empieza con una clase muestra →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO FUNCIONA ============ -->
+    <section class="section" id="como-funciona" style="padding-top: 0;">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Cómo funciona</p>
+          <h2>De curioso a músico en tres pasos</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <h3>Agenda tu clase muestra</h3>
+            <p>
+              Elige un horario, cuéntanos tu meta y conoce a tu profesor. Sin
+              compromiso.
+            </p>
+          </div>
+          <div class="step">
+            <h3>Recibe tu plan</h3>
+            <p>
+              Diagnóstico honesto de tu nivel y una ruta personalizada con
+              metas que sí se cumplen.
+            </p>
+          </div>
+          <div class="step">
+            <h3>Aprende en vivo</h3>
+            <p>
+              Clases 1 a 1 por videollamada con audio configurado para música,
+              tareas semanales y feedback en la comunidad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ POR QUÉ KANTA ============ -->
+    <section class="section dark">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Por qué Kanta</p>
+          <h2>Online no significa a medias</h2>
+        </div>
+        <div class="why">
+          <div class="why-item">
+            <h3>En vivo, no videos grabados</h3>
+            <p>
+              Un profesor que te escucha y te corrige en el momento. La
+              diferencia entre practicar y mejorar.
+            </p>
+          </div>
+          <div class="why-item">
+            <h3>Audio de verdad</h3>
+            <p>
+              Videollamadas configuradas para música: tu voz y tu piano se
+              escuchan como son, sin filtros que arruinen el sonido.
+            </p>
+          </div>
+          <div class="why-item">
+            <h3>Progreso visible</h3>
+            <p>
+              Cada clase termina con algo logrado. Cada nivel, con una meta
+              cumplida que puedes mostrar.
+            </p>
+          </div>
+          <div class="why-item">
+            <h3>Comunidad que empuja</h3>
+            <p>
+              Discord con retos semanales, open mics y feedback entre alumnos.
+              Nadie aprende música solo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRECIOS ============ -->
+    <section class="section" id="precios">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Precios</p>
+          <h2>Empieza por una clase muestra</h2>
+        </div>
+
+        <div class="pricing-note">
+          <span>
+            <strong>Clase muestra:</strong> conoce a tu profe, recibe tu
+            diagnóstico y vive una clase real antes de decidir.
+          </span>
+          <a href={AGENDA} class="btn btn-primary">Agendar ahora</a>
+        </div>
+
+        <!-- TODO: reemplazar S/ XXX por tus precios reales antes de publicar -->
+        <div class="grid-3">
+          <article class="card price-card">
+            <h3>Paquete 4 clases</h3>
+            <p class="price">S/ 300</p>
+            <p class="per">Ideal para probar un mes de avance</p>
+            <ul>
+              <li>4 clases en vivo de 1 hora</li>
+              <li>Material y tareas por clase</li>
+              <li>Acceso a la comunidad</li>
+            </ul>
+          </article>
+          <article class="card price-card featured">
+            <span class="badge">El favorito</span>
+            <h3>Paquete 8 clases</h3>
+            <p class="price">S/ 550</p>
+            <p class="per">Dos meses de progreso constante</p>
+            <ul>
+              <li>8 clases en vivo de 1 hora</li>
+              <li>Plan personalizado por nivel</li>
+              <li>Material, pistas y tareas</li>
+              <li>Acceso a la comunidad</li>
+            </ul>
+          </article>
+          <article class="card price-card">
+            <h3>Paquete 12 clases</h3>
+            <p class="price">S/ 750</p>
+            <p class="per">El mejor precio por clase</p>
+            <ul>
+              <li>12 clases en vivo de 1 hora</li>
+              <li>Plan personalizado por nivel</li>
+              <li>Material, pistas y tareas</li>
+              <li>Prioridad para elegir horarios</li>
+            </ul>
+          </article>
+        </div>
+        <p style="margin-top: 1.25rem; color: #44566B; font-size: 0.95rem;">
+          ¿Estás fuera de Perú? Escríbenos por
+          <a href={WHATSAPP}>WhatsApp</a> y te pasamos los precios en USD. Pagos
+          con Yape, Plin, transferencia o PayPal.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE EL PROFE ============ -->
+    <section class="section" id="profe" style="padding-top: 0;">
+      <div class="container about">
+        <!-- TODO: reemplazar este bloque por tu foto real -->
+        <div class="about-photo">Tu foto aquí ♯</div>
+        <div>
+          <p class="eyebrow">Tu profesor</p>
+          <h2>Hola, soy [TU NOMBRE]</h2>
+          <p style="margin-top: 0.75rem; color: #44566B;">
+            <!-- TODO: tu historia en 3-4 líneas: años de experiencia, formación,
+            a quiénes has enseñado y por qué enseñas. Cierra con algo personal. -->
+            Músico y profesor con [X] años enseñando canto, piano y composición.
+            Fundé Kanta porque creo que aprender música no depende de dónde
+            vives, sino de tener un buen plan y alguien que no te deje rendirte.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq" style="padding-top: 0;">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2>Lo que todos preguntan antes de empezar</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>¿Necesito tener un instrumento?</summary>
+            <p>
+              Para piano sí: un teclado básico de 61 teclas es suficiente para
+              empezar. Para canto y composición solo necesitas audífonos y
+              ganas.
+            </p>
+          </details>
+          <details>
+            <summary>¿Qué necesito para una clase?</summary>
+            <p>
+              Internet estable, audífonos y un espacio tranquilo. En tu primera
+              clase te ayudamos a configurar el audio para que todo suene bien.
+            </p>
+          </details>
+          <details>
+            <summary>¿En qué horarios hay clases?</summary>
+            <p>
+              Lunes a viernes de 9:00 a 12:00 y de 14:00 a 21:00; sábados de
+              9:00 a 12:00 y de 14:00 a 15:00 (hora de Perú, GMT-5). Agendas en
+              línea y eliges el horario que te acomode.
+            </p>
+          </details>
+          <details>
+            <summary>¿Cómo pago?</summary>
+            <p>
+              En Perú: Yape, Plin o transferencia bancaria. Desde otros países:
+              PayPal. Pronto también pago con tarjeta desde la web.
+            </p>
+          </details>
+          <details>
+            <summary>¿Qué pasa si tengo que cancelar una clase?</summary>
+            <p>
+              Puedes reprogramarla sin costo avisando con al menos 24 horas de
+              anticipación. Tu clase no se pierde.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="section dark cta-final" id="contacto">
+      <div class="container">
+        <h2>Tu música empieza hoy</h2>
+        <p>
+          Agenda tu clase muestra y descubre hasta dónde puede llegar tu voz,
+          tus manos o tus canciones.
+        </p>
+        <a href={WHATSAPP} class="btn btn-primary">Escríbenos por WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="logo">kanta<sup>♯</sup></span>
+      <nav aria-label="Redes sociales">
+        <!-- TODO: confirmar handles reales al reservarlos -->
+        <a href="https://instagram.com/academiakanta">Instagram</a>
+        <a href="https://tiktok.com/@academiakanta">TikTok</a>
+        <a href="https://youtube.com/@academiakanta">YouTube</a>
+      </nav>
+      <span>Toca. Escribe. Kanta. · © 2026 · Hecho en Perú</span>
+    </div>
+  </footer>
+</Layout>

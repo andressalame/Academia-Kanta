@@ -1,0 +1,48 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Kanta ♯ — Academia de música online | Canto, piano y composición',
+  description =
+    'Clases en vivo de canto, piano y composición musical, 100% online. Toca. Escribe. Kanta. Agenda tu clase muestra hoy.',
+} = Astro.props;
+
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={Astro.site} />
+
+    <!-- Open Graph / redes -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={Astro.site} />
+    <meta property="og:locale" content="es_PE" />
+    <!-- TODO: crear imagen og-image.png (1200x630, fondo azul medianoche + logo) y subirla a /public -->
+    <!-- <meta property="og:image" content="https://academiakanta.com/og-image.png" /> -->
+
+    <!-- Tipografías del Brand Book: Space Grotesk (titulares) + Inter (cuerpo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- TODO Fase 3 del plan: instalar Google Analytics y el pixel de Meta aquí -->
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
